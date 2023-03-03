@@ -12,6 +12,7 @@ class GetWeatherByLocationAction {
     {
 
         try {
+
             $response = Http::get(Config::get('weather.url').'/data/3.0/onecall', [
                 'lat' => $data->latitude,
                 'lon' => $data->longitude,
